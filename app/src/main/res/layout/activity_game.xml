@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/btn_stop3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/stopstr"
+        app:layout_constraintStart_toEndOf="@+id/btn_stop2"
+        app:layout_constraintTop_toBottomOf="@+id/slot3" />
+
+    <Button
+        android:id="@+id/btn_stop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/stopstr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slot2" />
+
+    <TextView
+        android:id="@+id/txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/txtv1str"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtv_mycoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/coinvalue"
+        app:layout_constraintStart_toStartOf="@+id/txtv"
+        app:layout_constraintTop_toBottomOf="@+id/txtv" />
+
+    <TextView
+        android:id="@+id/txtv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtv2str"
+        app:layout_constraintStart_toStartOf="@+id/txtv_mycoin"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_mycoin" />
+
+    <TextView
+        android:id="@+id/txtv_betcoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/betcoinvalue"
+        app:layout_constraintStart_toStartOf="@+id/txtv3"
+        app:layout_constraintTop_toBottomOf="@+id/txtv3" />
+
+    <ImageView
+        android:id="@+id/slot1"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_height"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/slot2"
+        app:layout_constraintTop_toTopOf="@+id/slot2"
+        app:srcCompat="@drawable/question" />
+
+    <ImageView
+        android:id="@+id/slot2"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_height"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/question" />
+
+    <ImageView
+        android:id="@+id/slot3"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_height"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/slot2"
+        app:layout_constraintTop_toTopOf="@+id/slot2"
+        app:srcCompat="@drawable/question" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/backstr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_stop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/stopstr"
+        app:layout_constraintEnd_toStartOf="@+id/btn_stop2"
+        app:layout_constraintTop_toBottomOf="@+id/slot1" />
+
+</android.support.constraint.ConstraintLayout>
