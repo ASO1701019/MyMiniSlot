@@ -8,7 +8,7 @@
     <string name="betcoinvalue">10</string>
     <string name="txt_betup">掛け金UP</string>
     <string name="txt_betdown">掛け金DOWN</string>
-    <string name="txt_start">スタート</string>
+    <string name="txt_start">Start</string>
     <string name="backstr">戻る</string>
     <string name="stopstr">STOP</string>
 </resources>
